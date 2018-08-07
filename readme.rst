@@ -1,70 +1,33 @@
-###################
-What is CodeIgniter
-###################
+# import-exceldata-ci
+A PHP (Codeigniter) code to read excel sheets and insert (or update) data to SQL table
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+### Technologies used ###
+* [Codeigniter Version 3](https://codeigniter.com/) 
+* PHP 7.2.7
+* MySQL 5.0.12
+* Uses [PhpSpreadsheet Library](https://github.com/PHPOffice/PhpSpreadsheet) 
+* reference https://github.com/MazahirHaroon/Read_Excel-Codeigniter
 
-*******************
-Release Information
-*******************
+### set up ###
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+* To run server side code locally you can use LAMP, WAMP, MAMP, or XAMP
+* Clone the file and make the necessary changes. 
+	
+	- .\application\config\config.php
+		* Change $base_url
+    
+ 	- .\application\config\database.php
+		* Change the databasse name, username and password
+ 
+ * Create a database and import import-exceldata-ci file into it, to create the table as per the sheet in the excel file. 
+ 
+(Read this [Documentation](https://codeigniter.com/user_guide/) for issues regarding Codeigniter)
+  
+### How to run ###
+Go to the link http://localhost/"your_base_url_here_if_any"/c_import
+browse file and upload
 
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+### PhpSpreadsheet Library ###
+Make sure that you download the latest version of `PhpSpreadsheet Library` file from
+the releases section **[here](https://github.com/PHPOffice/PhpSpreadsheet)**.
+(The vendor folder contains the downloaded PhpSpreadsheet Library files in this project)
