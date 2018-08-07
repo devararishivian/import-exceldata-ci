@@ -19,7 +19,7 @@
  	- .\application\config\database.php
 		* Change the databasse name, username and password
  
- * Create a database and import import-exceldata-ci file into it, to create the table as per the sheet in the excel file. 
+ * Create a database and import import-exceldata-ci.sql file into it, to create the table as per the sheet in the excel file. 
  
 (Read this [Documentation](https://codeigniter.com/user_guide/) for issues regarding Codeigniter)
   
