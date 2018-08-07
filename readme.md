@@ -1,5 +1,5 @@
-# import-exceldata-ci
-A PHP (Codeigniter) code to read excel sheets and insert (or update) data to SQL table
+# import-exceldata-ci #
+### A PHP (Codeigniter) code to read excel sheets and insert (or update) data to SQL table ###
 
 ### Technologies used ###
 * [Codeigniter Version 3](https://codeigniter.com/) 
